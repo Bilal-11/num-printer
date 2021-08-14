@@ -1,6 +1,7 @@
 // Program to accept a 5-digit number and print it in large-# format
 #include<iostream>
 #include<string>
+#include<stdlib.h>
 using namespace std;
 
 void painter(char*);
@@ -25,7 +26,25 @@ int main()
 	// Accept 5-digit number as a string
 	char num[6];
 	cout << "Enter a 5-digit number: ";
-	cin >> num;
+	cin >> num;	
+
+	// Code to rule out invalid input
+	if (strlen(num) != 5)
+	{
+		cout << endl << "Invalid Input" << endl;
+		exit(1);
+	}
+	else
+	{
+		for (int k = 0; k < 5; k++)
+		{
+			if (num[k] > 57 || num[k] < 48)
+			{
+				cout << endl << "Invalid Input" << endl;
+				exit(1);
+			}
+		}
+	}
 
 	cout << endl;
 	
