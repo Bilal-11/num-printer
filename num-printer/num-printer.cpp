@@ -9,7 +9,7 @@ void painter(char*);
 // Array of pointers for each digit that points to all parts of the large-# format of that digit
 const char* one[] = { " #   ", "##   "," #   "," #   ", " #   ", " #   ", " #   ", "###  " };
 const char* two[] = {"#####  ","    #  ","    #  " ,"    #  " ,"#####  ","#      ","#      ","#####  " };
-const char* three[] = { "#####   ", "	 #  ", "	 #  ", "#####   ", "	 #  ", "	 #  ", "	 #  ","#####   " };
+const char* three[] = { "#####   ", "     #  ", "     #  ", "#####   ", "     #  ", "     #  ", "     #  ","#####   " };
 const char* four[] = {"#       ","#       " ,"#       " ,"#  #    " , "## ###  ","   #    ","   #    " ,"   #    " };
 const char* five[] = {"######  ","#       ","#       " ,"######  " ,"     #  ","     #  " ,"     #  ","#####   " };
 const char* six[] = { "#####   ","#       ","#       " ,"######  ","#    #  ","#    #  ","#    #  ","#####   " };

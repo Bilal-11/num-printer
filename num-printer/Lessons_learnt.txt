@@ -1,0 +1,9 @@
+1. In C++, strings are treated as 'const char[]' instead of just 'char[]' as in C. So to make an array of pointers to strings in C++, they must be declared as 'const char* a[]' instead of 'char* a[]'.
+2. When declaring a string of length 'n' before defining it, you must declare it with array length one greater than the string length (to accomodate for '\0' at the end); i.e., 'char* str[len+1]'.
+3. I made an array of pointers to array of pointers.
+4. 'strlen' function doesn't count '\0' when returing the length of a string.
+
+Learning from the solution provided by author:
+5. A more elegant way of looping over a string 'while (str[i]!='\0')'.
+6. Can use windows.h to write 'gotoxy' function to reposiion cursor and print.
+7. TODO: Understand the loop that print the #'s
