@@ -140,6 +140,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <Text Include="..\..\..\components.txt" />
+    <Text Include="large-hash.txt" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="num-printer.cpp" />
