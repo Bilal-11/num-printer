@@ -3,7 +3,17 @@
 #include<string>
 using namespace std;
 
+// Array of pointers for each digit that points to all parts of the large-# format of that digit
 const char* one[] = { " #   ", "##   "," #   "," #   ", " #   ", " #   ", " #   ", "###  " };
+const char* two[] = {"#####  ","    #  ","    #  " ,"    #  " ,"#####  ","#      ","#      ","#####  " };
+const char* three[] = { "#####   ", "	 #  ", "	 #  ", "#####   ", "	 #  ", "	 #  ", "	 #  ","#####   " };
+const char* four[] = {"#       ","#       " ,"#       " ,"#  #    " , "## ###  ","   #    ","   #    " ,"   #    " };
+const char* five[] = {"######  ","#       ","#       " ,"######  " ,"     #  ","     #  " ,"     #  ","#####   " };
+const char* six[] = { "#####   ","#       ","#       " ,"######  ","#    #  ","#    #  ","#    #  ","#####   " };
+const char* seven[] = {"######   ","      #  ","      #  " ,"      #  " ,"      #  " ,"      #  " ,"      #  " ,"      #  " };
+const char* eight[] = {" ####   ","#    #  ","#    #  " ," ####   " ,"#    #  " ,"#    #  " ,"#    #  " ," ####   " };
+const char* nine[] = { "#####   ","#    #  ","#    #  " ," ####   " ,"     #  " ,"     #  " ,"     #  " ," ####   " };
+const char* zero[] = { " ####   ","#    #  ","#    #  " ,"#    #  " ,"#    #  " ,"#    #  " ,"#    #  " ," ####   " };
 
 int main()
 {
@@ -16,7 +26,7 @@ int main()
 	
 	for (int i = 0; i < 8; i++)
 	{
-		cout << one[i] << endl;
+		cout << one[i] << two[i] << three[i] << four[i] << five[i] << six[i] << seven[i] << eight[i] << nine[i] << zero[i] << endl;
 	}
 	
 
